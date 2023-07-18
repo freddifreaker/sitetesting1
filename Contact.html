@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact & Booking</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Page layout styles */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .contact-info div {
+      flex-basis: 50%;
+    }
+    
+    .contact-label {
+      font-weight: bold;
+    }
+    .consult-form {
+        display: flex;
+
+    }
+
+    /* Page layout styles */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+  
+   
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .navbar {
+      background-color: #333;
+      height: 60px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar-brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .navbar-nav {
+      margin-left: auto;
+      list-style: none;
+      display: flex;
+    }
+    
+    .nav-item {
+      margin-right: 20px;
+    }
+    
+    .nav-link {
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    
+    /* Main content styles */
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<nav class="navbar">
+    <a href="./index.html" class="navbar-brand">Artist Name</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="./Gallery.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="./Contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+<body>
+  <div class="container">
+    <h1>Contact & Booking</h1>
+    <div class="contact-info">
+      <div>
+        <p class="contact-label">Social Media:</p>
+        <p>[Links to your social media profiles]</p>
+      </div>
+      <div>
+        <p class="contact-label">Social Media:</p>
+        <p>[Links to your social media profiles]</p>
+      </div>
+      <div>
+        <p class="contact-label">Social Media:</p>
+        <p>[Links to your social media profiles]</p>
+      </div>
+      <div>
+        <p class="contact-label">Social Media:</p>
+        <p>[Links to your social media profiles]</p>
+      </div>
+    </div>
+    
+    <p>Feel free to reach out to me via social media. I am open to collaborations, commissions, or any inquiries related to my artwork. I look forward to hearing from you!</p>
+  </div>
+
+  <div class="container">
+    <form action="process-form.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="project-details">Project Details:</label>
+    <textarea id="project-details" name="project-details" required></textarea>
+    
+    <label for="consultation-date">Preferred Consultation Date:</label>
+    <input type="date" id="consultation-date" name="consultation-date" required>
+    
+    <label for="consultation-time">Preferred Consultation Time:</label>
+    <input type="time" id="consultation-time" name="consultation-time" required>
+    
+    <input type="submit" value="Book Consultation">
+  </form>
+  </div>
+
+</body>
+</html>
